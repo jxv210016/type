@@ -265,7 +265,7 @@
         @keyframes confettiFall {
             0% {
                 opacity: 1;
-                transform: translateY(-100px) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
             }
             100% {
                 opacity: 0.5;
@@ -442,6 +442,7 @@
                 const confetti = document.createElement('div');
                 confetti.className = 'confetti';
                 confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '0';
                 confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
                 confetti.style.animationDelay = Math.random() * 1 + 's';
                 confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
